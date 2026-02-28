@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: rgb(22, 22, 22);
+}
+.box {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border: 1px solid rgb(252, 252, 253);
+    border-radius: 15px;   
+    overflow: hidden;
+    position: relative;
+}
+.images .myself{
+    height: 160px;
+    width: 160px;
+}
+.header{
+    height: 6vh;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box .logo{
+    width: 30px;
+    position: absolute;
+    top:3px;
+    left: 10px;
+}
+.quotes .Second{
+ color: rgb(198, 133, 251);
+}
+main{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+}
+.images{
+    width: 50%;
+    height: 35vh;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.identiy{
+    border: 1px solid rgb(198, 133, 251);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: myanimation 3s ease-in infinite alternate;
+}
+@keyframes myanimation{
+    0%{
+        transform: translateY(2px)
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: white;
+    gap: 15px;
+}
+.texts button{
+    border: 1px solid rgb(32, 31, 31) ;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    border-radius: 20px;
+    height: 4vh;
+    cursor: pointer;
+    width: 50%;
+}
+.texts button:hover{
+    transform: scale(1.1);
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.name img{
+    filter: invert(1);
+    width: 20px;
+}
+.name h2{
+    font-size: 12px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.email img{
+    filter: invert(1);
+    width: 20px;
+}
+.email h2{
+    font-size: 12px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.email h2 a{
+    color: white;
+    text-decoration: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.contact img{
+    filter: invert(1);
+    width: 20px;
+}
+.contact h2{
+    font-size: 12px;
+}
+.footer{
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid white;
+    width: 100%;
+}
+.footer img{
+    width: 30px;
+}
+.footer h2{
+    color: white;
+    font-size:15px;
+}
+.javascript{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.javascript:hover{
+    transform: scale(1.1);
+}
+.css{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.css:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.html{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.html:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+    main{
+        flex-direction: column;
+        height: 70%;
+    }
+    .box{
+        height: 70%;
+        width: 80%;
+    }
+    .texts{
+        align-items: center;
+    }
+    .texts button{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .box{
+        width: 85%;
+    }
+    .texts button{
+        width: 110%;
+    }
+}

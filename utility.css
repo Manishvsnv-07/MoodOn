@@ -1,0 +1,44 @@
+.filter{
+    filter: invert(1);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #373737;
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+.slider{
+  -webkit-appearance: none; 
+  width: 130px;
+  height: 5px;
+  background: #b6f2a4;
+  border-radius: 10px;
+  outline: none;
+}
+.active {
+    background: linear-gradient(-0deg,
+            #2e2655,
+            #2c2451,
+            #2b2742,
+            #2b2742);
+}
+.hide{
+    display: none;
+}

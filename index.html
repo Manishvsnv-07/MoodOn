@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="imgs/favicon.ico" href="favicon.ico">
+</head>
+
+<body>
+    <div class="sabkaparent">
+        <div class="header">
+            <img src="imgs/logo.jpeg" class="spotify-logo" width="50px" alt="spotify-logo">
+            <div class="RightSideElements">
+                <img src="imgs/home-svgrepo-com.svg" class="home filter" width="28px" alt="home">
+                <div class="searchbar flex">
+                    <img src="imgs/search.svg" class="searchicon filter" alt="Search-icon">
+                    <input type="search" class="" placeholder="What Do You Want To Play ?">
+                </div>
+                <button class="premium">Explore Premium</button>
+                <div class="install">
+                    <img src="imgs/download.svg" class="downlaod filter" alt="Download">
+                    <button class="installapp">Install App</button>
+                </div>
+                <img src="imgs/notify.svg" class="filter" width="20px" alt="Notify">
+                <img src="imgs/profile.svg" class="filter" width="14px" alt="Profile">
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div class="leftheader">
+                    <div class="lelements">
+                        <img src="imgs/sidebar.svg" class="filter" width="20px" alt="sidebar">
+                        <h2>Your Library</h2>
+                    </div>
+                    <div class="relements">
+                        <button class="create">
+                            <img src="imgs/plus.svg" class="filter" width="20px" alt="plusicon">
+                            <h2>Create</h2>
+                        </button>
+                        <img src="imgs/spread.svg" class="filter" alt="Spread">
+                    </div>
+                </div>
+                <div class="searchlist">
+                    <div class="searchbutton">
+                        <button class="playlist">Playlist</button>
+                        <button class="albums">Albums</button>
+                    </div>
+                    <div class="searching">
+                        <img src="imgs/search.svg" width="17px" class="filter" alt="Searching playlist">
+                        <div class="recentbutton">
+                            <h2>Recent</h2>
+                            <img src="imgs/recent.svg" width="17px" class="filter" alt="Recent">
+                        </div>
+                    </div>
+                </div>
+                <div class="yourlikedandfavmusic">
+                    <div class="leftliked">
+                        <img src="imgs/like.jpg" class="leftimg" style="width: 50px; height: 50px; object-fit: cover;"
+                            alt="liked song">
+                        <h2>liked Songs</h2>
+                        <img src="imgs/play.svg" class="leftcardplay filter" width="20px" alt="Left play">
+                    </div>
+                    <div class="leftfavsinger" onclick="window.open('about.html','_blank')">
+                        <img src="imgs/me.png" class="leftimg2" style="width: 50px; height: 50px; object-fit: cover;"
+                            alt="anuv jain">
+                        <h2>Creator</h2>
+                        <img src="imgs/play.svg" class="leftcardplay filter" alt="Left Play">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rightheader">
+                    <button id="allbtn">All</button>
+                    <button id="musicbtn">Music</button>
+                    <button id="podcastbtn">Podcast</button>
+                </div>
+                <div class="cardcontainer">
+                    <div class="likedsongs">
+                        <div class="liked">
+                            <img src="imgs/like.jpg" alt="liked song">
+                            <h2>liked Songs</h2>
+                        </div>
+                        <div class="favsinger"onclick = "window.open('about.html','_blank')">
+                            <img src="imgs/me.png" alt="anuv jain">
+                            <h2>Creator</h2>
+                        </div>
+                    </div>
+
+                    <div class="madeforyoucard">
+                        <h2 class="title">Made For You</h2>
+                        <div class="yourmusic"></div>
+                        <div class="hits">
+                            <h2 class="title">Today's Biggest Hits</h2>
+                            <div class="hitmusics"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="displaymusicandvolume"></div>
+                <div class="Playlistafterclick hide"></div>
+            </div>
+        </div>
+        <div class="musicplay">
+            <div class="ongoingmusic">
+
+            </div>
+            <div class="playpausenextprevious">
+                <div class="controlsysytem">
+                    <img src="imgs/shuffle.svg" class="filter" width="30px" alt="">
+                    <img src="imgs/previous.svg" class="filter" id="previous" width="30px" alt="previous">
+                    <img src="imgs/play.svg" class="filter" id="play" width="25px" alt="playmusic">
+                    <img src="imgs/next.svg" class="filter" id="next" width="30px" alt="Next">
+                    <img src="imgs/replay.svg" class="filter" width="20px" alt="replay">
+                </div>
+                <div class="seekbar">
+                    <div class="whiteline"></div>
+                </div>
+            </div>
+            <div class="volumecontrol">
+                <img src="imgs/volume.svg" class="filter" id="volume" width="20px" alt="Volume">
+                <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100">
+                <h2>100</h2>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
